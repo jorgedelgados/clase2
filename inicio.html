@@ -1,0 +1,122 @@
+<!doctype html>
+
+<html lang="es">
+    <head>
+        <title>Renta de Departamento</title>
+        <meta charset="utf-8">
+        <link href="formatos.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <section class="contenido">
+            <h1 id="titulo">El Departamento</h1>
+            <div class="imagenes">
+                <a href="#" onclick="document.getElementById('imagen1').style.display='block'">
+                    <img src="img/livingroom.jpg" class="normal" >
+                </a>
+                <div class="avanzar" onclick="avanzar(1)">
+                    <p>&gt;</p>
+                </div>
+                <div class="retroceder" onclick="avanzar(-1)">
+                    <p>&lt;</p>
+                </div>
+                <div class="esquina-inferior">
+                    <p>SALA</p>
+                </div>
+            </div>
+            <div class="imagenes">
+                <a href="#" onclick="document.getElementById('imagen2').style.display='block'">
+                    <img src="img/diningroom.jpg" class="normal" >
+                </a>
+                <div class="avanzar" onclick="avanzar(1)">
+                    <p>&gt;</p>
+                </div>
+                <div class="retroceder" onclick="avanzar(-1)">
+                    <p>&lt;</p>
+                </div>
+                <div class="esquina-inferior">
+                    <p>COMEDOR</p>
+                </div>
+            </div>
+            <div class="imagenes">
+                <a href="#" onclick="document.getElementById('imagen3').style.display='block'">
+                    <img src="img/bedroom.jpg" class="normal">
+                </a>
+                <div class="avanzar" onclick="avanzar(1)">
+                    <p>&gt;</p>
+                </div>
+                <div class="retroceder" onclick="avanzar(-1)">
+                    <p>&lt;</p>
+                </div>
+                <div class="esquina-inferior">
+                    <p>RECAMARA</p>
+                </div>
+            </div>
+            <div class="imagenes">
+                <a href="#" onclick="document.getElementById('imagen4').style.display='block'">
+                    <img src="img/livingroom2.jpg" class="normal" >
+                </a>
+                <div class="avanzar" onclick="avanzar(1)">
+                    <p>&gt;</p>
+                </div>
+                <div class="retroceder" onclick="avanzar(-1)">
+                    <p>&lt;</p>
+                </div>
+                <div class="esquina-inferior">
+                    <p>SALA 2</p>
+                </div>
+            </div>
+
+            <div class="seccion-miniaturas">
+                <div class="miniaturas">
+                    <img src="img/livingroom.jpg" class="minis" onclick="mostrar(1)">
+                </div>
+                <div class="miniaturas">
+                    <img src="img/diningroom.jpg" class="minis" onclick="mostrar(2)">
+                </div>
+                <div class="miniaturas">
+                    <img src="img/bedroom.jpg" class="minis" onclick="mostrar(3)">
+                </div>
+                <div class="miniaturas">
+                    <img src="img/livingroom2.jpg" class="minis" onclick="mostrar(4)">
+                </div>
+
+            </div>
+        </section>
+
+        <section id="imagen1" class="modal-ventana">
+            <div class="modal-contenido">
+                <h1>SALA</h1>
+                <img src="img/livingroom.jpg" class="imagen-modal">
+                <button class="boton" onclick="document.getElementById('imagen1').style.display='none'">Aceptar</button>
+            </div>
+        </section>
+
+        <section id="imagen2" class="modal-ventana">
+            <div class="modal-contenido">
+                <h1>COMEDOR</h1>
+                <img src="img/diningroom.jpg" class="imagen-modal">
+                <button class="boton" onclick="document.getElementById('imagen2').style.display='none'">Aceptar</button>
+            </div>
+        </section>
+
+        <section id="imagen3" class="modal-ventana">
+            <div class="modal-contenido">
+                <h1>RECAMARA</h1>
+                <img src="img/bedroom.jpg" class="imagen-modal">
+                <button class="boton" onclick="document.getElementById('imagen3').style.display='none'">Aceptar</button>
+            </div>
+        </section>
+
+        <section id="imagen4" class="modal-ventana">
+            <div class="modal-contenido">
+                <h1>SALA 2</h1>
+                <img src="img/livingroom2.jpg" class="imagen-modal">
+                <button class="boton" onclick="document.getElementById('imagen4').style.display='none'">Aceptar</button>
+            </div>
+        </section>
+        
+
+       <script src="codigo.js"></script> 
+    </body>
+</html>
